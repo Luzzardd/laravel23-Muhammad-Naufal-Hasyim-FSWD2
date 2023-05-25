@@ -11,7 +11,7 @@
         <!-- Bootstrap icons-->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
         <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="{{asset('css/styles.css')}}" rel="stylesheet" />
+        <link href="{{asset('css/landing.css')}}" rel="stylesheet" />
     </head>
     <body>
         <!-- Navigation-->
@@ -39,6 +39,10 @@
                             Cart
                             <span class="badge bg-dark text-white ms-1 rounded-pill">0</span>
                         </button>
+                        <a href="{{route('dashboard')}}" class="btn btn-outline-dark ms-1">
+                            <i class="bi-person-fill me-1"></i>
+                            login
+                        </a>
                     </form>
                 </div>
             </div>

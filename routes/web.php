@@ -1,6 +1,7 @@
 <?php
 
-
+use App\Http\Controllers\ProductController;
+use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
@@ -21,6 +22,9 @@ Route::get('/', function () {
 });
 
 Route::get('/user',[UserController::class,'index']);
-Route::get('/dashboard', [DashboardController::class, 'index']);
 
+Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
 
+Route::get('/product', [ProductController::class, 'index'])->name('product.index');
+
+Route::get('/category', [CategoryController::class, 'index'])->name('category.index');
