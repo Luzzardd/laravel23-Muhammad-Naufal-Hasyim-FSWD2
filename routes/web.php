@@ -3,7 +3,9 @@
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\DashboardController;
+use App\Http\Controllers\LandingController;
 use App\Http\Controllers\UserController;
+use App\Http\Controllers\RoleController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -21,10 +23,13 @@ Route::get('/', function () {
     return view('landing');
 });
 
-Route::get('/user',[UserController::class,'index']);
+Route::get('/landing',[LandingController::class,'index'])->name('landing');
 
 Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
 
 Route::get('/product', [ProductController::class, 'index'])->name('product.index');
-
+Route::get('/user', [UserController::class, 'index'])->name('user.index');
 Route::get('/category', [CategoryController::class, 'index'])->name('category.index');
+Route::get('/role', [RoleController::class, 'index'])->name('role.index');
+
+

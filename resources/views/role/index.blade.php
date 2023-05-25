@@ -3,7 +3,7 @@
 @section('konten')
 <main>
     <div class="container-fluid px-4">
-        <h1 class="mt-4">Kategori</h1>
+        <h1 class="mt-4">Role</h1>
         <div class="card mb-4">
             <div class="card-body">
                 <table id="datatablesSimple">
@@ -11,7 +11,7 @@
                         <tr>
                             <th>#</th>
                             <th>Nama</th>
-                            <th></th>
+                            <th>Action</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -22,3 +22,5 @@
     </div>
 </main>
 @endsection
+
+
